@@ -8,42 +8,54 @@
   
   <title>Frontend Mentor | Interactive rating component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+
 </head>
-<body>
+  <body>
+    <main>
 
-  <!-- Rating state start -->
+    <!-- Rating state start -->
+      <section aria-labelledby="rating-title" class="">
+        <h1 id="rating-title">How did we do?</h1>
+        <form>
+          <fieldset>
+            <p>
+              Please let us know how we did with your support request. All feedback is appreciated 
+              to help us improve our offering!
+            </p>
+            <ul>
+              <li><button>1</button></li>
+              <li><button>2</button></li>
+              <li><button>3</button></li>
+              <li><button>4</button></li>
+              <li><button>5</button></li>
+              <!-- <li><input type="radio" id="rating-1" name="rating" value="1"><label for="rating-1"></label></li>
+              <li><input type="radio" id="rating-2" name="rating" value="2"><label for="rating-2">2</label></li>
+              <li><input type="radio" id="rating-3" name="rating" value="3"><label for="rating-3">3</label></li>
+              <li><input type="radio" id="rating-4" name="rating" value="4"><label for="rating-4">4</label></li>
+              <li><input type="radio" id="rating-5" name="rating" value="5"><label for="rating-5">5</label></li> -->
+           
+            </ul>
+            
+            <button type="submit">Submit</button>
+          </fieldset>
+        </form>
 
-  How did we do?
+        <!-- Rating state end -->
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
+        <!-- Thank you state start -->
 
-  1 2 3 4 5
+        <p>You selected <!-- Add rating here --> out of 5</p>
 
-  Submit
+        <h2>Thank you!</h2>
 
-  <!-- Rating state end -->
+        <p>
+          We appreciate you taking the time to give a rating. If you ever need more support, 
+          don’t hesitate to get in touch!
+        </p>
 
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
+        <!-- Thank you state end -->
+      </section>
+    </main>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+  </body>
 </html>
