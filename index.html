@@ -7,56 +7,85 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Interactive rating component</title>
+  <link href="./styles.css" rel="stylesheet">
 
 
 </head>
-  <body>
-    <main>
-      <div id="app"></div>
-      <script type="module" src="/src/main.js"></script>
-    <!-- Rating state start -->
-      <section aria-labelledby="rating-title" class="">
-        <h1 id="rating-title">How did we do?</h1>
-        <form>
-          <fieldset>
-            <p>
+  <body class="bg-slate-900">
+    <main class="flex justify-center items-center min-h-screen">
+    
+      <script type="module" src="/main.js"></script>
+      
+      <!-- Rating state start -->
+      <section aria-labelledby="rating-title" aria-describedby="rating-description" 
+      class="bg-slate-700 flex flex-col space-y-5 mx-7 my-20 rounded-xl p-6 pb-10 max-w-90 shadow-xl">
+
+        <img src="./images/icon-star.svg" alt="star" class="max-w-10 bg-slate-600 p-2.5 rounded-full">
+        <h1 id="rating-title" class="text-white font-semibold text-2xl">How did we do?</h1>
+        
+
+        
+        <form > 
+          <fieldset aria-describedby="rating-description"  class="space-y-5 text-zinc-400" >
+            <legend id="rating-description" class="text-sm">
               Please let us know how we did with your support request. All feedback is appreciated 
               to help us improve our offering!
-            </p>
-            <ul>
-              <li><button>1</button></li>
-              <li><button>2</button></li>
-              <li><button>3</button></li>
-              <li><button>4</button></li>
-              <li><button>5</button></li>
-              <!-- <li><input type="radio" id="rating-1" name="rating" value="1"><label for="rating-1"></label></li>
-              <li><input type="radio" id="rating-2" name="rating" value="2"><label for="rating-2">2</label></li>
-              <li><input type="radio" id="rating-3" name="rating" value="3"><label for="rating-3">3</label></li>
-              <li><input type="radio" id="rating-4" name="rating" value="4"><label for="rating-4">4</label></li>
-              <li><input type="radio" id="rating-5" name="rating" value="5"><label for="rating-5">5</label></li> -->
+            </legend>
+            <ul role="radiogroup" class="flex justify-center gap-2 font-semibold">
+            
+              <li >
+                <input type="radio" id="rating-1" name="rating" value="1" aria-label="Rating 1" class="sr-only peer">
+                <label for="rating-1" class="flex bg-gray-600 rounded-full h-12 w-12 items-center justify-center cursor-pointer
+                 hover:bg-gray-800 peer-checked:bg-orange-500 peer-checked:text-black transition-colors">1</label>
+              </li>
+              <li >
+                <input type="radio" id="rating-2" name="rating" value="2" aria-label="Rating 2" class="sr-only peer">
+                <label for="rating-2" class="flex bg-gray-600 rounded-full h-12 w-12 items-center justify-center cursor-pointer
+                hover:bg-gray-800 peer-checked:bg-orange-500 peer-checked:text-black transition-colors">2</label>
+              </li>
+              <li >
+                <input type="radio" id="rating-3" name="rating" value="3" aria-label="Rating 3" class="sr-only peer">
+                <label for="rating-3" class="flex bg-gray-600 rounded-full h-12 w-12 items-center justify-center cursor-pointer
+                hover:bg-gray-800 peer-checked:bg-orange-500 peer-checked:text-black transition-colors">3</label>
+              </li>
+              <li >
+                <input type="radio" id="rating-4" name="rating" value="4" aria-label="Rating 4" class="sr-only peer">
+                <label for="rating-4" class="flex bg-gray-600 rounded-full h-12 w-12 items-center justify-center cursor-pointer
+                hover:bg-gray-800 peer-checked:bg-orange-500 peer-checked:text-black transition-colors">4</label>
+              </li>
+              <li >
+                <input type="radio" id="rating-5" name="rating" value="5" aria-label="Rating 5" class="sr-only peer">
+                <label for="rating-5" class="flex bg-gray-600 rounded-full h-12 w-12 items-center justify-center cursor-pointer
+                hover:bg-gray-800 peer-checked:bg-orange-500 peer-checked:text-black transition-colors">5</label>
+              </li>
            
             </ul>
             
-            <button type="submit">Submit</button>
+            <button type="submit" class="flex items-center justify-center hover:bg-orange-600 py-2.5 px-28 mx-auto mt-3
+             rounded-full bg-orange-500 shadow-lg text-black font-semibold tracking-widest transition-all duration-300">SUBMIT</button>
           </fieldset>
         </form>
-
-        <!-- Rating state end -->
-
-        <!-- Thank you state start -->
-
-        <p>You selected <!-- Add rating here --> out of 5</p>
-
-        <h2>Thank you!</h2>
-
-        <p>
-          We appreciate you taking the time to give a rating. If you ever need more support, 
-          don’t hesitate to get in touch!
-        </p>
-
-        <!-- Thank you state end -->
       </section>
+      
+     
     </main>
   
   </body>
 </html>
+  <!-- Rating state end -->
+
+        <!-- Thank you state start -->
+       
+
+        <!-- Thank you state end -->
+<!-- 
+<div class="justify-center">
+  <p class="text-orange-500">You selected  out of 5</p>
+
+  <h2 class="text-white">Thank you!</h2>
+
+  <p class="text-zinc-400">
+    We appreciate you taking the time to give a rating. If you ever need more support, 
+    don’t hesitate to get in touch!
+  </p>
+</div> -->
