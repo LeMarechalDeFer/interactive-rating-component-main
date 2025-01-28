@@ -17,7 +17,7 @@
       <script type="module" src="/main.js"></script>
       
       <!-- Rating state start -->
-      <section aria-labelledby="rating-title" aria-describedby="rating-description" 
+      <section id="rating-state" aria-labelledby="rating-title" aria-describedby="rating-description" 
       class="bg-slate-700 flex flex-col space-y-5 mx-7 my-20 rounded-xl p-6 pb-10 max-w-90 shadow-xl">
 
         <img src="./images/icon-star.svg" alt="star" class="max-w-10 bg-slate-600 p-2.5 rounded-full">
@@ -67,10 +67,10 @@
         </form>
       </section>
       
-      <section class=" bg-slate-700 flex flex-col items-center space-y-5 mx-7 my-20 rounded-xl p-6 pb-10 max-w-90 shadow-xl">
+      <section id="thank-state" class="hidden bg-slate-700 flex-col items-center space-y-5 mx-7 my-20 rounded-xl p-6 pb-10 max-w-90 shadow-xl">
 
         <img src="./images/illustration-thank-you.svg" alt="paiement terminal" class="max-w-50">
-        <h2 class="text-orange-400 bg-gray-600 rounded-full items-center px-4 py-1.5">You selected  out of 5</h2>
+        <h2 id="selected-rating" class="text-orange-400 bg-gray-600 rounded-full items-center px-4 py-1.5"></h2>
       
         <h3 class="text-white font-bold text-2xl">Thank you!</h3>
       
@@ -85,11 +85,3 @@
   
   </body>
 </html>
-  <!-- Rating state end -->
-
-        <!-- Thank you state start -->
-       
-
-        <!-- Thank you state end -->
-<!-- 
--->
